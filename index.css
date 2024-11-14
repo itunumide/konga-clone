@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    width: 100vw;
+ 
+}
+.container{
+    display: flex;
+}
+header{
+    display: flex;
+    flex-direction: column;
+}
+.nav-logo { img{
+
+    width: 100%;
+
+}}
+.nav{
+    display: flex;
+    justify-content:center;
+    gap: 50px;
+    align-items: center;
+    width: 100%;
+    a{
+        text-decoration: none;
+        color: white;
+        font-size: 15px ;
+    }
+}
+.services{
+    height: 30px;
+    padding: 5px 0px;
+    background-color: bisque;
+   
+    .nav-services{
+    
+        img{
+            width:100px;
+        }
+    }
+}
+.konga-logo{
+    img{
+        width: 150px;
+    }
+}
+.categories{
+    background-color: rgb(216, 103, 121);
+    height: 40px;
+    .cat{
+        font-weight: bolder;
+    }
+}
