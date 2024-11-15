@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 *{
     margin: 0;
     padding: 0;
+    
 }
 body{
     box-sizing: border-box;
     width: 100vw;
- 
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    
 }
 .container{
     display: flex;
@@ -22,19 +26,20 @@ header{
 .nav{
     display: flex;
     justify-content:center;
-    gap: 50px;
+    
     align-items: center;
     width: 100%;
     a{
         text-decoration: none;
         color: white;
-        font-size: 15px ;
+        font-size: 13px ;
     }
 }
 .services{
     height: 30px;
     padding: 5px 0px;
-    background-color: bisque;
+    background-color: #f6f6f6;
+    gap: 50px;
    
     .nav-services{
     
@@ -42,16 +47,110 @@ header{
             width:100px;
         }
     }
-}
-.konga-logo{
-    img{
-        width: 150px;
+}.nav-main{
+    background: #ed017f;
+    height: 60px;
+    .konga-logo{
+        margin-right: 40px;
+        img{
+            width: 140px;
+        }
+    }
+    .link-a{
+        width: 7%;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding-left: 15px;
+
+        .link{
+            display: inline-block; 
+            width: 50%;
+        }
+    }
+    .link-nav:hover{
+        background: white;
+        a, .select{
+            color:  #ed017f;
+        }
+        
+    }
+   
+    .input-search{
+        width: 40%;
+        border-radius: 5px;
+        background: white;
+       
+        .search{
+            width: 91%;
+            padding: 10px;
+            border-radius: 3px 0 0 3px;
+            border: none;
+        }
+        button{
+            width: 8.2%;
+            padding: 10px 0;
+            background: #fba100;
+            border: none;
+            border-radius: 0 3px 3px 0;
+           
+        }
+    }
+    .select-help{
+        width:7%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+       .select{
+        color: white;
+        display: flex;
+        justify-content: start;
+        align-items: center
+       }
+       .circle{
+        margin: 3px;
+       }
+       
+    }
+    .my-cart{
+        width: 9%;
+        background:#33b27b;
+        padding: 0 10px;
+        color: white;
+        border-radius: 3px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        .text{
+            display: inline-block;
+            width: 30px;
+            margin: 0 30px 0 7px;
+            
+          
+        }
+        .count{
+            padding:3px 6px ;
+            border-radius: 2px;
+            background: white;
+            color: black;
+            font-weight: bold;
+            font-size: 15px;
+        }
     }
 }
 .categories{
-    background-color: rgb(216, 103, 121);
+    background-color: #94004f;
     height: 40px;
+    gap: 50px;
     .cat{
         font-weight: bolder;
     }
+}
+.select-help:hover .circle path{
+    fill: #ed017f ;
 }
