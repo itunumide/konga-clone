@@ -9,148 +9,281 @@ body{
     width: 100vw;
     font-weight: 500;
     font-family: 'Open Sans', sans-serif;
-    
+
 }
 .container{
     display: flex;
+    flex-direction: column;
 }
 header{
     display: flex;
     flex-direction: column;
-}
-.nav-logo { img{
-
-    width: 100%;
-
-}}
-.nav{
-    display: flex;
-    justify-content:center;
-    
-    align-items: center;
-    width: 100%;
-    a{
-        text-decoration: none;
-        color: white;
-        font-size: 13px ;
-    }
-}
-.services{
-    height: 30px;
-    padding: 5px 0px;
-    background-color: #f6f6f6;
-    gap: 50px;
    
-    .nav-services{
+    .nav-logo { img{
+
+        width: 100%;
     
-        img{
-            width:100px;
-        }
-    }
-}.nav-main{
-    background: #ed017f;
-    height: 60px;
-    .konga-logo{
-        margin-right: 40px;
-        img{
-            width: 140px;
-        }
-    }
-    .link-a{
-        width: 7%;
-        height: 100%;
+    }}
+    .nav{
         display: flex;
-        justify-content: start;
-        align-items: center;
-        padding-left: 15px;
-
-        .link{
-            display: inline-block; 
-            width: 50%;
-        }
-    }
-    .link-nav:hover{
-        background: white;
-        a, .select{
-            color:  #ed017f;
-        }
+        justify-content:center;
         
-    }
-   
-    .input-search{
-        width: 40%;
-        border-radius: 5px;
-        background: white;
-       
-        .search{
-            width: 91%;
-            padding: 10px;
-            border-radius: 3px 0 0 3px;
-            border: none;
+        align-items: center;
+        width: 100%;
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 13px ;
         }
-        button{
-            width: 8.2%;
-            padding: 10px 0;
-            background: #fba100;
-            border: none;
-            border-radius: 0 3px 3px 0;
+    }
+    .services{
+        height: 30px;
+        padding: 5px 0px;
+        background-color: #f6f6f6;
+        gap: 50px;
+       
+        .nav-services{
+        
+            img{
+                width:100px;
+            }
+        }
+    }.nav-main{
+        background: #ed017f;
+        height: 60px;
+       
+        .konga-logo{
+            margin-right: 40px;
+            img{
+                width: 140px;
+            }
+        }
+        .link-a{
+            width: 7%;
+            height: 100%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            padding-left: 15px;
+    
+            .link{
+                display: inline-block; 
+                width: 50%;
+            }
+        }
+        .link-nav:hover{
+            background: white;
+            a, .select{
+                color:  #ed017f;
+            }
+            
+        }
+       
+        .input-search{
+            width: 40%;
+            border-radius: 5px;
+            background: white;
+           
+            .search{
+                width: 90.9%;
+                padding: 10px;
+                border-radius: 3px 0 0 3px;
+                border: none;
+            }
+            button{
+                width: 8.2%;
+                padding: 10px 0;
+                background: #fba100;
+                border: none;
+                border-radius: 0 3px 3px 0;
+               
+            }
+        }
+        .select-help{
+            width:7%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+           .select{
+            color: white;
+            display: flex;
+            justify-content: start;
+            align-items: center
+           }
+           .circle{
+            margin: 3px;
+           }
            
         }
-    }
-    .select-help{
-        width:7%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-       .select{
-        color: white;
-        display: flex;
-        justify-content: start;
-        align-items: center
-       }
-       .circle{
-        margin: 3px;
-       }
-       
-    }
-    .my-cart{
-        width: 9%;
-        background:#33b27b;
-        padding: 0 10px;
-        color: white;
-        border-radius: 3px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-        .text{
-            display: inline-block;
-            width: 30px;
-            margin: 0 30px 0 7px;
+        .my-cart{
+            width: 9%;
+            background:#33b27b;
+            padding: 0 10px;
+            color: white;
+            border-radius: 3px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             
-          
-        }
-        .count{
-            padding:3px 6px ;
-            border-radius: 2px;
-            background: white;
-            color: black;
-            font-weight: bold;
-            font-size: 15px;
+            .text{
+                display: inline-block;
+                width: 30px;
+                margin: 0 30px 0 7px;
+                
+              
+            }
+            .count{
+                padding:3px 6px ;
+                border-radius: 2px;
+                background: white;
+                color: black;
+                font-weight: bold;
+                font-size: 15px;
+            }
         }
     }
-}
-.categories{
-    background-color: #94004f;
-    height: 40px;
-    gap: 50px;
-    .cat{
-        font-weight: bolder;
+    .categories{
+        background-color: #94004f;
+        height: 40px;
+        gap: 50px;
+        top: 61px;
+        .cat{
+            font-weight: bolder;
+        }
     }
 }
 .select-help:hover .circle path{
     fill: #ed017f ;
 }
+.main-content
+{
+    background-color: #f6f6f6;
+    display: block;
+    .intro-section{
+        background-color: white;
+        margin: 5px 0 30px 0;
+        padding: 20px 30px;
+        span{
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            font-size: 12px;
+            color: black;
+            margin: 2px;
+        }
+        .daily-deals{
+            color: #9a0052; 
+            font-weight: bold;
+        }
+        h1{
+            margin-top: 10px;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+    }
+    .feature-sections{
+        margin: auto;
+        width: 96%;
+        .feature-item{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+        .feature-details{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px 0;
+           justify-content: space-between;
+        }
+        .detail-item{
+            display: flex;
+            flex-direction: column;
+            background: white;
+            padding: 10px;
+            border-radius: 2px;
+            margin-bottom: 20px;
+            width: 16vw;
+           .product-image{
+                height: 200px;
+                width: 100%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+           }
+           .product-description{
+            font-size: 15px;
+            margin: 5px 0;
+           }
+           hr{
+            opacity: 0.3;
+           }
+           .price-info{
+            display: flex;
+            margin: 10px 0 20px 0;
+            justify-content: space-between;
+            align-items: center;
+            h4{
+                font-size: 18px;
+            }
+            del{
+                font-size: 13px;
+                opacity: 0.5;
+            }
+            span{
+                font-size: 10px;
+                background: rgba(237, 1, 127,0.3);
+                color: #ed017f;
+                padding: 5px;
+                border-radius: 10px;
+                font-weight: bold;
+            }
+           }
+           .time-left{
+            font-size: 14px;
+            font-weight: bold;
+            margin: 10px 0;
+            .time{
+                
+            }
+           }
+           .sales-info{
+            margin: 10px 0;
+            span{
+                font-size: 14px;
+                font-weight: bolder;
+            }
+            .sold-count{
+                font-weight: 550;
+            }
+           
+           }
+           .add-to-cart{
+            padding: 8px;
+            border-radius: 3px;
+            border: 1px solid#ed017f;
+            color: #ed017f;
+            font-size: 14px;
+            font-weight: bold;
+            background: transparent;
+        }
+        }
+    }
+}
+.home::after {
+    content: " > ";
+    opacity: 0.5;
+    color: black;
+    margin-left: 2px;
+   
+  }
+  .add-to-cart:hover{
+      color: white;
+      background:  #ed017f;
+  }
+  
