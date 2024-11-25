@@ -9,11 +9,12 @@ body{
     width: 100vw;
     font-weight: 500;
     font-family: 'Open Sans', sans-serif;
-
 }
 .container{
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
+
 }
 header{
     display: flex;
